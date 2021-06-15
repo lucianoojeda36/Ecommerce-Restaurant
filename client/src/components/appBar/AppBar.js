@@ -26,6 +26,7 @@ export default function PersistentDrawerLeft() {
     const cartQuantity = useSelector(state => state.cart.cartQuantity)
     const userAccess = useSelector(state => state.userReducer.userId.access)
     const userId = useSelector(state => state.userReducer.userId)
+    const darckstate = useSelector(state => state.darckModeReducer.darckModeState)
 
     const classes = useStyles();
     const theme = useTheme();
@@ -33,6 +34,9 @@ export default function PersistentDrawerLeft() {
     const dispatch = useDispatch()
 
     const { currentUser } = useContext(AuthContext)
+
+
+
 
     const [darkMode, setDarkMode] = useState(false);
 
@@ -101,6 +105,7 @@ export default function PersistentDrawerLeft() {
                     </div>
                     <div className={classes.grow} />
                     <FormControlLabel
+                        value={darkMode}
                         control={
                             <Switch
                                 checked={darkMode}

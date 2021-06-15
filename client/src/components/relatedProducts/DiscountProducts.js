@@ -22,10 +22,12 @@ export const DiscountProducts = () => {
 
     return (
         <>
-            <Typography component="p" variant="h4" color="primary">
-                Productos con descuento
-</Typography>
+            <Typography  style={{ textAlign:'center',marginTop:'15px'}} component="p" variant="h4" color="primary">
+                Productos con Descuento
+             </Typography>
+          
             <Carousel
+                style={{padding:'35px'}}
                 itemPadding={[50, 10]}
                 enableMouseSwipe={true}
                 itemsToScroll={2} breakPoints={breakPoints}
@@ -37,11 +39,12 @@ export const DiscountProducts = () => {
                         discountProducts.map(p => {
                             return <Item key={p} product={p} />
 
-                        })) : (<h1>no hay productos</h1>)
+                        })) : (<h1>no hay productos en promocion </h1>)
                 }
 
 
             </Carousel>
+        
         </>
     )
 }
