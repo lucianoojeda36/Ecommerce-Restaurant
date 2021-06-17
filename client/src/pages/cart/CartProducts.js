@@ -34,7 +34,7 @@ export default function Cart() {
 
     else if (localizacion > 50) { return history.push("/advertencia") } else {
       try { dispatch(findOrCreateOrders(userId)); return history.push("/PageCheckout") }
-      catch (error) { Swal.fire({ icon: 'error', title: 'Oops...', text: 'Something went wrong!', }) }
+      catch (error) { Swal.fire({ icon: 'error', title: 'Oops...', text: 'Algo ha salido mal!', }) }
     }
   }
 

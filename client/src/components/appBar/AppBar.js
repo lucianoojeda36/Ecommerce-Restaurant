@@ -106,6 +106,7 @@ export default function PersistentDrawerLeft() {
                     </div>
                     <div className={classes.grow} />
                     <FormControlLabel
+
                         value={darkMode}
                         control={
                             <Switch
