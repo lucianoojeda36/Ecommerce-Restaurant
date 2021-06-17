@@ -63,10 +63,7 @@ export const themeLight = createMuiTheme({
 
 export const themeDark = createMuiTheme({
   typography: {
-    fontFamily: [
-      'Open Sans',  
-      'Comfortaa',
-    ].join(','),
+    fontFamily: 'Woodland'
    },
   palette: {
     // type: "dark",
