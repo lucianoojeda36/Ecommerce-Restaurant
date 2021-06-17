@@ -28,7 +28,7 @@ export const WishListProducts = () => {
                 Productos de su Wishlist
 </Typography>
             <Carousel
-                style={{padding:'66px'}}
+                style={{paddingRight:'66px', paddingLeft:'241px'}}
                 itemPadding={[50, 10]}
                 enableMouseSwipe={true}
                 itemsToScroll={2} breakPoints={breakPoints}
