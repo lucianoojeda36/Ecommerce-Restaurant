@@ -21,6 +21,7 @@ import { AuthContext } from '../AuthContext';
 import { getUsersByEmailId, getUserWishList } from '../../store/user/user.action';
 import { switchDark } from "../../store/darckMode/darckMode.action";
 
+
 export default function PersistentDrawerLeft() {
     const history = useHistory()
     const cartQuantity = useSelector(state => state.cart.cartQuantity)
@@ -38,7 +39,7 @@ export default function PersistentDrawerLeft() {
 
 
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
 
     useEffect(() => {
@@ -93,7 +94,7 @@ export default function PersistentDrawerLeft() {
                         <MenuRoundedIcon fontSize="large" />
                     </IconButton>
                     }
-                    <Button onClick={refreshSearch}  color='inherit' to="/" component={Link}>
+                    <Button onClick={refreshSearch} style={{fontWeight:'bold',fontFamily:'Woodland'}} color="secondary"  to="/" component={Link}>
                         eatx
                     </Button>
 
@@ -109,7 +110,7 @@ export default function PersistentDrawerLeft() {
                         control={
                             <Switch
                                 checked={darkMode}
-                                onChange={() => setDarkMode(!darkMode)}
+                                onChange={() =>  setDarkMode(!darkMode)}
                                 color="primary"
                                 onClick={() => dispatch(switchDark(darkMode))}
                             />

@@ -24,7 +24,7 @@ const FilterGeneres = () => {
             {categories&&categories[0]&&categories.map((category, index) => {
                 if (category.name !== "") {
                     return (
-                        <Typography variant="h6" key={index} name={category.name}
+                        <Typography color="secondary" variant="h6" key={index} name={category.name}
                             onClick={(e) => { handleGenere(e,category) }}
                             className={active === category.name ? "button-filter-active":"button-filter"}
                         >

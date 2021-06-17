@@ -6,7 +6,7 @@ import Link from '@material-ui/core/Link'
 
 export default function Footer (){
     return <footer>
-        <Box px={{xs:3,sm:10}} py={{xs:5,sm:10}} bgcolor="#f27121" color="#ffffff">
+        <Box px={{xs:3,sm:10}} py={{xs:0,sm:2}} bgcolor="#f27121" color="#ffffff">
             <Container maxWidth="lg">
                 <Grid container spacing={5}>
                     <Grid item xs={12} sm={4}>
@@ -66,7 +66,7 @@ export default function Footer (){
                     </Grid>
 
                 </Grid>
-                <Box textAlign="center" pt={{xs:5,sm:10}} pb={{xs:5,sm:0}}>
+                <Box textAlign="center" pt={{xs:1,sm:2}} pb={{xs:1,sm:0}}>
                 Copyright © EATX {new Date().getFullYear()}
                 </Box>
 

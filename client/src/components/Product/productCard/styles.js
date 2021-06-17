@@ -7,6 +7,7 @@ export const useStyles = makeStyles((theme) => ({
       maxWidth: 345,
       maxHeight: 400,
       border:blue,
+     
       
     },
     container:{
@@ -17,6 +18,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     paper:{
       backgroundpaper:theme.palette.background.paper,
+      height:'350px'
+      
+
     },
     noPadding: {
       padding: '0',

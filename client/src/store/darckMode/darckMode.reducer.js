@@ -25,7 +25,7 @@ import {
   
   var initialState = {
   
-    darckModeState:"false"
+    darckModeState:"true"
   };
   
   const darckModeReducer = (state = initialState, action) => {

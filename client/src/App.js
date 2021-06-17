@@ -34,19 +34,23 @@ axios.defaults.baseURL=process.env.REACT_APP_API || "http://localhost:3001"
 
 export const themeLight = createMuiTheme({
   typography: {
-    fontFamily: [
-      'Open Sans',  
-      'Comfortaa',
-    ].join(','),
+    fontFamily: 'Woodland'
    },
   palette: {
+    // type: "light",
+    text:{
+      primary:'#f27121',
+      // secondary:'#f27121'
+      // inherit:'#ffffff'
+    },
     primary:{
       main: '#f27121',
-      light:'#76ff03',
+      light:'#ffffff',
       dark:'#ff6f00',
     },
     secondary: {
-      main: '#14141A'
+      main: '#000000',
+      light:'#ffffff',
     },
     background: {
       default: "#cfd8dc",
@@ -65,16 +69,19 @@ export const themeDark = createMuiTheme({
     ].join(','),
    },
   palette: {
+    // type: "dark",
+    text:{
+      primary:'#ffffff',
+      // inherit:'#ffffff'
+    },
     primary:{
-      main: '#f27121',
+      main: '#ffffff',
       light:'#76ff03',
       dark:'#ff6f00',
-      text: {
-            primary: "#ffffff"
-          }
     },
     secondary: {
-      main: '#14141A'
+      main: '#ffffff',
+      dark:'#ff6f00',
     },
     background: {
       default: "#222222",

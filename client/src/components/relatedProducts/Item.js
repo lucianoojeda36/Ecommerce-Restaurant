@@ -13,6 +13,8 @@ import { useSelector } from "react-redux";
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        // maxHeigth: 223,
+        
     },
     cross: {
         color: "red"

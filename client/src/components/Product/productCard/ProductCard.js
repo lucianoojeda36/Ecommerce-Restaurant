@@ -34,7 +34,7 @@ export default function ProductCard({ stock, id, img, name, description, price, 
           <Typography gutterBottom variant="h5" component="h2">
             {!name ? 'Some food' : name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="secondary" component="p">
             {!description ? 'Food is great to eat, it makes you healthy! Sometimes...' : description}
           </Typography>
         </CardContent>

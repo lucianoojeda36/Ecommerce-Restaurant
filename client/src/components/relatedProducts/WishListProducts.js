@@ -24,11 +24,11 @@ export const WishListProducts = () => {
 
     return (
         <>
-            <Typography style={{ textAlign:'center',marginTop:'15px'}} component="p" variant="h4" color="primary">
+            <Typography style={{ textAlign:'center',marginTop:'15px'}} component="p" variant="h4" color="text.primary">
                 Productos de su Wishlist
 </Typography>
             <Carousel
-                style={{padding:'35px'}}
+                style={{padding:'66px'}}
                 itemPadding={[50, 10]}
                 enableMouseSwipe={true}
                 itemsToScroll={2} breakPoints={breakPoints}
