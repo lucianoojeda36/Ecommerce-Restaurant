@@ -102,7 +102,7 @@ function App() {
     <React.Fragment>
       <AuthProvider>
 
-        <ThemeProvider theme={darkMode ? themeLight : themeDark}>
+        <ThemeProvider theme={darkMode ? themeDark : themeLight}>
         <Switch>
           <Route exact path='/cart' component={CartProducts} />
           <Route exact path='/logIn' component={PageLogIn} />
